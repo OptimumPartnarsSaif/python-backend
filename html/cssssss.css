@@ -1,0 +1,91 @@
+    /* Reset & Fonts */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: 'MedievalSharp', cursive;
+    background-color: #1a120b;
+    color: #f9f5e3;
+    padding: 1rem;
+    line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+    text-align: center;
+    margin-bottom: 2rem;
+    }
+    nav {
+    margin-top: 1rem;
+    }
+    nav a {
+    color: #f9f5e3;
+    margin: 0 1rem;
+    text-decoration: none;
+    }
+    nav a:hover {
+    text-decoration: underline;
+    }
+
+    /* Gallery (Flexbox) */
+    .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    }
+    .gallery img {
+    width: 100%;
+    max-width: 300px;
+    border: 3px solid #d4af37;
+    border-radius: 8px;
+    }
+
+    /* Magazine Layout (CSS Grid) */
+    .magazine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    }
+    .magazine article {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-left: 5px solid #d4af37;
+    border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid #444;
+    }
+
+    /* 📱 Mobile-Friendly Media Queries */
+    @media (max-width: 1024px) {
+    .magazine {
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+
+    @media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .magazine {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    }
