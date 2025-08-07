@@ -1,0 +1,55 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn.btn-primary {
+  background-color: #3498db;
+}
+.btn.btn-primary:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+.btn.btn-secondary {
+  background-color: #2ecc71;
+}
+.btn.btn-secondary:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+.btn.btn-danger {
+  background-color: #e74c3c;
+}
+.btn.btn-danger:hover {
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+}/*# sourceMappingURL=style.css.map */
