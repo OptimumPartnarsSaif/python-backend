@@ -1,0 +1,83 @@
+    /* style.css */
+
+    /* Reset & Compatibility */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    /* Block: site-header */
+    .site-header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    }
+    .site-header__title {
+    font-size: 1.5rem;
+    }
+
+    /* Block: nav */
+    .nav__list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    }
+    .nav__link {
+    text-decoration: none;
+    color: white;
+    }
+    .nav__link:hover,
+    .nav__link:focus {
+    text-decoration: underline;
+    }
+
+    /* Block: card */
+    .card {
+    background: #fff;
+    color: #333;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+    }
+    .card--featured {
+    border: 2px solid gold;
+    }
+    .card__title {
+    font-size: 1.25rem;
+    }
+
+    /* Block: form */
+    .form__group {
+    margin-bottom: 1rem;
+    }
+    .form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    }
+    .form__input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    .form__button {
+    background: blue;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    .form__button:hover,
+    .form__button:focus {
+    background: darkblue;
+    }
+
+    /* Vendor prefixes (example for border-radius) */
+    .form__input,
+    .form__button {
+    -webkit-border-radius: 4px; /* Safari */
+    -moz-border-radius: 4px;    /* Firefox */
+    border-radius: 4px;         /* Standard */
+    }

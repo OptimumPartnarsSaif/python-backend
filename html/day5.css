@@ -1,0 +1,140 @@
+    /* =========================
+    Reset & Base Styles
+    ========================= */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html {
+    font-size: 16px;
+    }
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+    padding: 20px;
+    color: #222;
+    }
+
+    /* =========================
+    Header
+    ========================= */
+    .header {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+    .header__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1f3c88;
+    }
+
+    .header__subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    }
+
+    /* =========================
+    Form Container
+    ========================= */
+    .form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+
+    /* Flex for consistent spacing */
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    }
+
+    .form__title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f3c88;
+    }
+
+    /* =========================
+    Form Fields
+    ========================= */
+    .form__group {
+    margin-bottom: 20px;
+    }
+
+    .form__label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    }
+
+    .form__input,
+    .form__textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form__input:focus,
+    .form__textarea:focus {
+    outline: none;
+    border-color: #1f3c88;
+    box-shadow: 0 0 0 3px rgba(31, 60, 136, 0.2);
+    }
+
+    /* =========================
+    Button
+    ========================= */
+    .form__button {
+    background: linear-gradient(135deg, #1f3c88, #4a90e2);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    }
+
+    .form__button:hover,
+    .form__button:focus {
+    background: linear-gradient(135deg, #16306b, #357ab8);
+    }
+
+    /* =========================
+    Footer
+    ========================= */
+    .footer {
+    text-align: center;
+    margin-top: 30px;
+    }
+
+    .footer__text {
+    font-size: 0.9rem;
+    color: #666;
+    }
+
+    /* =========================
+    High Contrast Mode Support
+    ========================= */
+    @media screen and (forced-colors: active) {
+    .form__button {
+        border: 1px solid ButtonText;
+        background-color: ButtonFace;
+        color: ButtonText;
+    }
+    }
